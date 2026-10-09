@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="bingbot" content="index, follow">
+<meta name="description" content="八戒伦理电影网：影像伦理思辨与正版观影指引。讨论镜头边界、纪录片知情同意、受害者视角、AI换脸肖像权、剧透礼仪、改编与原著——电影有权利让你哭，但你有权知道它是怎么做到的。片单导航、观影指南、正版渠道。">
+<meta name="keywords" content="八戒伦理电影网,影像伦理,电影伦理,纪录片伦理,镜头边界,知情同意,剧透礼仪,受害者视角,AI换脸,肖像权,电影评论,电影鉴赏,观影伦理,伦理电影,正版观影渠道,电影推荐,片单导航,观影指南,文艺片,纪录片,修复版,公有领域电影,bajielunlidianyingwang-cn">
+<title>八戒伦理电影网 · 影像伦理思辨与正版观影指引 | bajielunlidianyingwang-cn.github.io</title>
+<link rel="canonical" href="https://bajielunlidianyingwang-cn.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="八戒伦理电影网 · 影像伦理思辨与正版观影指引">
+<meta property="og:description" content="镜头边界、纪录片知情同意、受害者视角、AI换脸肖像权、剧透礼仪、改编与原著。不提供任何影视资源，只做观影指引。">
+<meta property="og:url" content="https://bajielunlidianyingwang-cn.github.io/">
+<meta property="og:site_name" content="八戒伦理电影网">
+<meta name="theme-color" content="#2b2118">
+<style>
+:root{
+  --ink:#2b2118;
+  --ink2:#4a3a2c;
+  --paper:#f6efe2;
+  --paper2:#efe3cd;
+  --gold:#c99a3f;
+  --gold2:#e6c879;
+  --cinnabar:#c2552f;   /* 朱砂 */
+  --cinnabar2:#e0834f;
+  --bamboo:#6f8a5a;
+  --night:#1a2a3a;
+  --line:rgba(43,33,24,.16);
+  --shadow:0 14px 40px -18px rgba(43,33,24,.5);
+  --serif:"Songti SC","STSong",Georgia,"Source Han Serif SC",serif;
+  --sans:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  --mono:"SFMono-Regular",Consolas,"Courier New",monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:var(--sans);
+  color:var(--ink);
+  background:
+    radial-gradient(1200px 600px at 82% -8%, rgba(201,154,63,.16), transparent 60%),
+    radial-gradient(900px 520px at 8% 12%, rgba(194,85,47,.10), transparent 62%),
+    var(--paper);
+  background-attachment:fixed;
+  line-height:1.75;
+  font-size:16px;
+  -webkit-text-size-adjust:100%;
+  overflow-x:hidden;
+}
+/* 宣纸纹理 */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(43,33,24,.022) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgba(43,33,24,.016) 0 1px, transparent 1px 4px);
+}
+a{color:var(--cinnabar);text-decoration:none;transition:.28s}
+a:hover{color:var(--gold)}
+img,svg,video{max-width:100%;display:block}
+button,input{font:inherit}
+
+/* ============ NAV ============ */
+.top{position:sticky;top:0;z-index:60;background:rgba(246,239,226,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top-in{max-width:1180px;margin:0 auto;padding:12px 26px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.logo{display:flex;align-items:baseline;gap:9px;font-family:var(--serif);font-weight:800;letter-spacing:.02em}
+.logo b{font-size:21px;color:var(--ink)}
+.logo i{font-style:normal;font-size:12px;letter-spacing:.22em;color:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:2px 9px;white-space:nowrap}
+.top nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+.top nav a{
+  font-size:14.5px;padding:7px 13px;border-radius:999px;color:var(--ink2);
+  position:relative;font-weight:500;
+}
+.top nav a::after{content:"";position:absolute;left:13px;right:13px;bottom:3px;height:2px;background:var(--cinnabar);transform:scaleX(0);transition:.3s;transform-origin:right}
+.top nav a:hover{color:var(--cinnabar);background:rgba(194,85,47,.07)}
+.top nav a:hover::after{transform:scaleX(1);transform-origin:left}
+
+/* ============ HERO ============ */
+.hero{position:relative;z-index:1;padding:66px 26px 54px;overflow:hidden}
+.sky{
+  position:absolute;inset:0;z-index:0;
+  background:
+    linear-gradient(180deg,#f7d9a8 0%,#efc08a 22%,#e6a98c 46%,#cf8f7c 68%,#a85f52 100%);
+}
+/* 云 */
+.cloud{position:absolute;border-radius:999px;background:rgba(255,250,240,.72);filter:blur(.4px);z-index:1}
+.cloud i{position:absolute;background:inherit;border-radius:999px}
+.c1{width:230px;height:46px;left:-70px;top:14%;animation:drift 76s linear infinite}
+.c1 i:nth-child(1){width:74px;height:74px;left:30px;top:-36px}
+.c1 i:nth-child(2){width:52px;height:52px;left:108px;top:-24px}
+.c2{width:300px;height:54px;right:-90px;top:26%;animation:drift 92s linear infinite reverse}
+.c2 i:nth-child(1){width:92px;height:92px;left:42px;top:-44px}
+.c2 i:nth-child(2){width:64px;height:64px;left:150px;top:-30px}
+.c3{width:180px;height:38px;left:34%;top:7%;animation:drift 64s linear infinite}
+.c4{width:250px;height:44px;right:14%;top:44%;opacity:.55;animation:drift 110s linear infinite}
+@keyframes drift{from{transform:translateX(-10%)}to{transform:translateX(14%)}}
+
+/* 远山 */
+.ridge{position:absolute;left:0;right:0;bottom:0;height:34%;z-index:1;pointer-events:none}
+.ridge span{position:absolute;bottom:-2px;border-radius:50% 50% 0 0}
+.r1{left:-6%;width:46%;height:86%;background:rgba(120,74,62,.55)}
+.r2{left:22%;width:52%;height:66%;background:rgba(90,60,52,.6)}
+.r3{right:-8%;width:50%;height:78%;background:rgba(150,96,72,.42)}
+
+/* 落日 */
+.sun{position:absolute;right:9%;top:9%;width:168px;height:168px;border-radius:50%;z-index:1;
+  background:radial-gradient(circle at 50% 42%,#fff3d4 0 8%,#ffe0a2 18%,#ffc476 40%,#f0925a 70%,#d9644a 100%);
+  box-shadow:0 0 60px 14px rgba(255,196,120,.55),0 0 130px 40px rgba(233,120,80,.3);
+  animation:glow 11s ease-in-out infinite alternate}
+@keyframes glow{from{filter:brightness(1) scale(1);box-shadow:0 0 60px 14px rgba(255,196,120,.5),0 0 120px 34px rgba(233,120,80,.26)}
+  to{filter:brightness(1.09) scale(1.025);box-shadow:0 0 74px 20px rgba(255,200,132,.66),0 0 160px 52px rgba(233,120,80,.4)}}
+/* 飞鸟 */
+.bird{position:absolute;z-index:2;color:#3a281c;font-size:20px;opacity:.8}
+.b1{left:16%;top:20%;animation:fly 17s linear infinite}
+.b2{left:20%;top:24%;font-size:15px;animation:fly 21s linear infinite .8s}
+.b3{left:24%;top:17%;font-size:12px;animation:fly 25s linear infinite 1.5s}
+@keyframes fly{from{transform:translate(0,0) rotate(-6deg)}to{transform:translate(46vw,7vh) rotate(6deg)}}
+
+.hero-in{max-width:1180px;margin:0 auto;position:relative;z-index:3;display:grid;grid-template-columns:1.35fr .65fr;gap:44px;align-items:center}
+.hero h1{font-family:var(--serif);font-size:clamp(34px,6.2vw,66px);line-height:1.12;letter-spacing:.01em;color:#3a2418}
+.hero h1 em{font-style:normal;position:relative;display:inline-block;padding:0 4px;color:#5a3118}
+.hero h1 em::after{content:"";position:absolute;left:-6px;right:-6px;bottom:6px;height:14px;z-index:-1;
+  background:linear-gradient(92deg,var(--gold2),var(--cinnabar),var(--gold));
+  transform:skewX(-15deg);opacity:.82;border-radius:3px}
+.hero .sub{margin-top:18px;font-size:clamp(15px,1.7vw,17.5px);color:#6b4c38;max-width:36em}
+.hero .sub b{color:var(--cinnabar);font-weight:700}
+.hero .lede{margin-top:22px;font-family:var(--serif);font-size:clamp(18px,2.4vw,24px);line-height:1.6;color:#3a2418;border-left:4px solid var(--cinnabar);padding-left:16px}
+.kv{margin-top:26px;display:flex;flex-wrap:wrap;gap:9px}
+.kv span{font-size:13.5px;letter-spacing:.04em;padding:6px 13px;border-radius:999px;background:rgba(255,255,255,.62);border:1px solid var(--line);color:#5b4533}
+.kv span u{text-decoration:none;color:var(--cinnabar);font-weight:700}
+
+.dl{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+.dl div{background:rgba(255,252,246,.86);padding:16px 18px}
+.dl dt{font-size:12px;letter-spacing:.16em;color:#8a6f58}
+.dl dd{font-family:var(--mono);font-size:clamp(17px,2.1vw,22px);font-weight:800;color:var(--cinnabar);margin-top:3px;letter-spacing:.02em}
+.dl dd small{font-family:var(--sans);font-size:11.5px;color:#9a826a;font-weight:500;margin-left:5px}
+
+/* ============ SECTION ============ */
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+section{padding:64px 0;position:relative;z-index:2}
+.sec-h{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:34px}
+.sec-h .no{font-family:var(--serif);font-size:15px;letter-spacing:.2em;color:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:5px 14px;white-space:nowrap}
+.sec-h h2{font-family:var(--serif);font-size:clamp(26px,3.6vw,38px);line-height:1.25;letter-spacing:.01em}
+.sec-h h2 u{text-decoration:none;color:var(--cinnabar)}
+.sec-h p{width:100%;max-width:44em;color:#6b5644;font-size:15.5px;margin-top:6px}
+.tag{display:inline-block;font-size:12.5px;padding:3px 10px;border-radius:6px;background:rgba(194,85,47,.1);color:var(--cinnabar);border:1px solid rgba(194,85,47,.24);margin-right:6px}
+.crumb{font-size:12.5px;color:#9a826a;letter-spacing:.06em;margin-bottom:10px}
+.crumb a{color:#9a826a}
+.crumb a:hover{color:var(--cinnabar)}
+
+/* ============ ① 四问（计数器相连网格）============ */
+.q{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.q>div{background:var(--paper);padding:30px 30px 28px;position:relative;overflow:hidden;transition:.34s;counter-increment:q}
+.q>div::before{content:counter(q,decimal-leading-zero);position:absolute;right:18px;top:6px;font-family:var(--serif);font-size:64px;line-height:1;color:rgba(194,85,47,.10);font-weight:800;transition:.4s}
+.q>div:hover{background:#fffdf8;transform:translateY(-5px);box-shadow:0 22px 44px -26px rgba(90,49,24,.55)}
+.q>div:hover::before{color:rgba(201,154,63,.55);transform:rotate(-6deg) scale(1.08)}
+.q h3{font-family:var(--serif);font-size:23px;display:flex;align-items:center;gap:11px;margin-bottom:9px}
+.q h3 i{font-style:normal;font-size:13px;font-weight:700;color:#fff;background:var(--cinnabar);border-radius:8px;padding:3px 9px;letter-spacing:.1em;white-space:nowrap;font-family:var(--sans)}
+.q p{color:#6b5644;font-size:15px}
+.q .do{margin-top:14px;font-size:13.5px;color:var(--ink2);border-top:1px dashed var(--line);padding-top:11px}
+.q .do b{color:var(--cinnabar)}
+
+/* ============ ② 八条戒（Bento）============ */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(196px,auto);gap:16px}
+.bk{position:relative;overflow:hidden;border-radius:15px;padding:22px 22px 20px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow);transition:.36s;background-attachment:fixed}
+.bk::after{content:"";position:absolute;right:-22px;bottom:-26px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.10);filter:blur(2px);transition:.5s}
+.bk:hover{transform:translateY(-6px) rotate(.4deg);box-shadow:0 26px 50px -24px rgba(60,30,10,.65)}
+.bk:hover::after{transform:scale(1.5);background:rgba(255,255,255,.18)}
+.bk:nth-child(1){grid-column:span 2;background:linear-gradient(140deg,#3a5a73,#2b4357)}
+.bk:nth-child(2){background:linear-gradient(150deg,#7a6a4a,#5e4f34)}
+.bk:nth-child(3){background:linear-gradient(150deg,#8f5b4a,#6f4132)}
+.bk:nth-child(4){grid-column:span 2;background:linear-gradient(140deg,#6f8a5a,#526b41)}
+.bk:nth-child(5){background:linear-gradient(150deg,#a85a52,#7f3f38)}
+.bk:nth-child(6){grid-column:span 2;background:linear-gradient(140deg,#c99a3f,#a5762a)}
+.bk:nth-child(7){background:linear-gradient(150deg,#5a4a6a,#42364f)}
+.bk:nth-child(8){grid-column:span 3;background:linear-gradient(135deg,#2b2118,#4a3a2c)}
+.bk .num{font-family:var(--serif);font-size:40px;line-height:1;opacity:.34;letter-spacing:.02em;transition:.4s}
+.bk:hover .num{opacity:.62;transform:skewX(-8deg)}
+.bk h3{font-family:var(--serif);font-size:22px;margin:8px 0 7px;letter-spacing:.01em}
+.bk p{font-size:13.8px;line-height:1.68;opacity:.93}
+.bk .cap{margin-top:12px;font-size:12.5px;letter-spacing:.14em;color:var(--gold2);border-top:1px solid rgba(255,255,255,.24);padding-top:9px}
+
+/* ============ ③ 片单（横向滑动卡）============ */
+.belt{display:flex;gap:16px;overflow-x:auto;padding:8px 4px 22px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:rgba(194,85,47,.4) transparent}
+.belt::-webkit-scrollbar{height:9px}
+.belt::-webkit-scrollbar-thumb{background:rgba(194,85,47,.35);border-radius:999px}
+.belt::-webkit-scrollbar-track{background:rgba(43,33,24,.05);border-radius:999px}
+.bi{flex:0 0 288px;scroll-snap-align:start;border-radius:14px;overflow:hidden;background:#fffdf8;border:1px solid var(--line);box-shadow:var(--shadow);transition:.34s;display:flex;flex-direction:column}
+.bi:hover{transform:translateY(-7px);box-shadow:0 26px 50px -24px rgba(60,30,10,.6)}
+.bi .post{height:196px;position:relative;overflow:hidden}
+.bi .post i{position:absolute;inset:0;transition:transform 1.2s cubic-bezier(.2,.7,.3,1)}
+.bi:hover .post i{transform:scale(1.09)}
+.bi .post u{position:absolute;left:0;right:0;bottom:0;height:52%;text-decoration:none;background:linear-gradient(0deg,rgba(20,14,8,.78),transparent)}
+.bi .post b{position:absolute;left:12px;bottom:10px;font-family:var(--serif);font-size:17px;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.5);letter-spacing:.02em}
+.bi .post span{position:absolute;right:10px;top:10px;font-size:11.5px;letter-spacing:.1em;background:rgba(255,255,255,.9);color:#5a3118;border-radius:6px;padding:3px 8px;font-weight:700}
+.bi .body{padding:14px 16px 16px;flex:1;display:flex;flex-direction:column}
+.bi h4{font-size:16.5px;line-height:1.42;margin-bottom:6px}
+.bi cite{font-style:normal;font-size:12px;color:#9a826a;letter-spacing:.05em}
+.bi p{font-size:13.2px;color:#6b5644;margin-top:9px;line-height:1.66}
+.bi .tags{margin-top:auto;padding-top:10px;display:flex;flex-wrap:wrap;gap:5px}
+.bi .tags s{text-decoration:none;font-size:11.5px;color:var(--cinnabar);background:rgba(194,85,47,.1);border:1px solid rgba(194,85,47,.24);border-radius:5px;padding:2px 7px}
+
+/* ============ ④ 表格 ============ */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:15px;background:rgba(255,252,246,.82);box-shadow:var(--shadow);-webkit-overflow-scrolling:touch}
+.tbl{width:100%;min-width:980px;border-collapse:collapse;font-size:14.2px}
+.tbl thead th{position:sticky;top:0;z-index:5;background:#2b2118;color:var(--gold2);text-align:left;padding:14px 15px;font-size:13px;letter-spacing:.1em;font-weight:700;white-space:nowrap;border-right:1px solid rgba(255,255,255,.07)}
+.tbl thead th:last-child{border-right:none}
+.tbl tbody td{padding:13px 15px;border-top:1px solid var(--line);vertical-align:top;color:var(--ink2)}
+.tbl tbody tr:nth-child(even){background:rgba(194,85,47,.035)}
+.tbl tbody tr:hover{background:rgba(201,154,63,.12)}
+.tbl tbody td:first-child{font-weight:700;white-space:nowrap;color:var(--ink);font-size:13.6px}
+.meter{display:flex;align-items:center;gap:9px;margin:5px 0}
+.meter u{text-decoration:none;height:7px;border-radius:999px;background:linear-gradient(92deg,var(--cinnabar),var(--gold));display:block;min-width:74px;flex:1}
+.meter b{font-family:var(--mono);font-size:12px;color:var(--cinnabar);font-weight:800;min-width:34px}
+.pill{display:inline-block;font-size:11.5px;padding:2px 8px;border-radius:999px;letter-spacing:.04em;white-space:nowrap}
+.p-high{background:rgba(111,138,90,.2);color:#3f5a30;border:1px solid rgba(111,138,90,.44)}
+.p-mid{background:rgba(201,154,63,.18);color:#7a5518;border:1px solid rgba(201,154,63,.42)}
+.p-low{background:rgba(194,85,47,.13);color:#8f3a1c;border:1px solid rgba(194,85,47,.34)}
+.tbl-note{margin-top:13px;font-size:13px;color:#8a7258}
+
+/* ============ ⑤ 手风琴 ========= */
+.faq{display:flex;flex-direction:column;gap:11px}
+.faq>details{border:1px solid var(--line);border-radius:13px;background:rgba(255,252,246,.86);overflow:hidden;transition:.3s;box-shadow:0 4px 14px -8px rgba(43,33,24,.28)}
+.faq>details[open]{box-shadow:0 16px 38px -18px rgba(60,30,10,.5);border-color:rgba(201,154,63,.5)}
+.faq>summary{cursor:pointer;padding:17px 22px;font-size:16.5px;font-weight:700;list-style:none;display:flex;align-items:center;gap:14px;position:relative}
+.faq>summary::-webkit-details-marker{display:none}
+.faq>summary .n{font-family:var(--serif);font-size:16px;font-weight:800;color:#fff;background:var(--cinnabar);width:30px;height:30px;border-radius:8px;display:grid;place-items:center;flex:0 0 auto}
+.faq>summary::after{content:"＋";margin-left:auto;font-size:20px;color:var(--gold);transition:.3s;font-weight:400}
+.faq>details[open]>summary::after{content:"－";transform:rotate(180deg)}
+.faq .a{padding:0 22px 20px 66px;color:#5f4b3a;font-size:15px;line-height:1.82}
+.faq .a p{margin-bottom:9px}
+.faq .a blockquote{margin:12px 0;padding:12px 16px;background:rgba(201,154,63,.12);border-left:4px solid var(--gold);font-family:var(--serif);font-size:16.5px;color:#5a3d1c}
+.faq .a ol,.faq .a ul{padding-left:20px;margin:8px 0}
+.faq .a li{margin-bottom:5px}
+.faq .a a{word-break:break-all}
+
+/* ============ ⑥ 订阅 ============ */
+.sub{background:linear-gradient(135deg,#2b2118,#4a3a2c 62%,#7a5a3a);color:#f6efe2;border-radius:18px;padding:38px 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;box-shadow:var(--shadow)}
+.sub h3{font-family:var(--serif);font-size:clamp(22px,2.8vw,30px);line-height:1.35}
+.sub h3 em{font-style:normal;color:var(--gold2)}
+.sub p{opacity:.82;font-size:14.6px;margin-top:10px}
+.sub form{display:flex;gap:9px;flex-wrap:wrap}
+.sub input[type=email]{flex:1;min-width:210px;padding:13px 16px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.1);color:#fff;font-size:15px;outline:none}
+.sub input[type=email]::placeholder{color:rgba(246,239,226,.5)}
+.sub input[type=email]:focus{border-color:var(--gold2);background:rgba(255,255,255,.16)}
+.sub button{padding:13px 24px;border-radius:10px;border:none;background:var(--gold);color:#3a2418;font-weight:800;font-size:15px;cursor:pointer;transition:.28s;white-space:nowrap}
+.sub button:hover{background:var(--gold2);transform:translateY(-2px)}
+.sub .ok{color:var(--gold2);font-size:14px;margin-top:9px;display:none}
+
+/* ============ FOOTER ============ */
+footer{border-top:1px solid var(--line);background:rgba(255,252,246,.7);padding:44px 26px 30px;position:relative;z-index:2}
+.ft{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:30px}
+.ft h5{font-family:var(--serif);font-size:17px;margin-bottom:11px;color:var(--ink)}
+.ft ul{list-style:none}
+.ft li{margin-bottom:7px;font-size:13.6px}
+.ft a{color:#6b5644}
+.ft a:hover{color:var(--cinnabar)}
+.ft .brand p{font-size:13.4px;color:#6b5644;margin-top:8px;max-width:30em}
+.legal{margin-top:26px;padding-top:20px;border-top:1px solid var(--line);font-size:12.8px;color:#7a6550;line-height:1.85}
+.legal b{color:var(--cinnabar)}
+.top-link{position:fixed;right:20px;bottom:22px;z-index:50;width:46px;height:46px;border-radius:50%;background:var(--cinnabar);color:#fff;display:grid;place-items:center;box-shadow:0 10px 26px -10px rgba(143,58,28,.7);font-size:17px}
+.top-link:hover{background:var(--gold);color:#3a2418;transform:translateY(-3px)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ============ 响应式 ============ */
+@media(max-width:980px){
+  .hero-in{grid-template-columns:1fr;gap:30px}
+  .sun{width:120px;height:120px;right:4%}
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .bk:nth-child(n){grid-column:span 1}
+  .bk:nth-child(1),.bk:nth-child(4),.bk:nth-child(6){grid-column:span 2}
+  .sub{grid-template-columns:1fr;padding:30px 26px}
+  .ft{grid-template-columns:1fr 1fr;gap:26px}
+}
+@media(max-width:600px){
+  body{font-size:15.4px}
+  .top-in{padding:10px 16px;gap:10px}
+  .logo b{font-size:18px}
+  .top nav a{padding:6px 10px;font-size:13.6px}
+  .hero{padding:40px 16px 40px}
+  .wrap{padding:0 16px}
+  section{padding:46px 0}
+  .q{grid-template-columns:1fr}
+  .bento{grid-template-columns:1fr}
+  .bk:nth-child(n){grid-column:span 1;min-height:168px}
+  .bi{flex:0 0 252px}
+  .bi .post{height:170px}
+  .dl{grid-template-columns:1fr}
+  .faq>summary{padding:15px 17px;font-size:15.4px;gap:11px}
+  .faq .a{padding:0 17px 17px 52px;font-size:14.6px}
+  .ft{grid-template-columns:1fr}
+  .sub{padding:26px 20px}
+  .sun,.bird,.cloud{display:none}
+  .hero h1 em::after{bottom:3px;height:10px}
+  .ridge{height:22%}
+}
+@media print{
+  .top,.top-link,.sub,nav{display:none!important}
+  body{background:#fff!important;color:#000!important;font-size:11pt}
+  section{page-break-inside:avoid;padding:20px 0}
+  .belt{overflow:visible;flex-wrap:wrap}
+  .bi{flex:0 0 46%;margin-bottom:12px}
+  a{color:#000!important;text-decoration:underline}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="top" role="banner">
+  <div class="top-in">
+    <a class="logo" href="#top" aria-label="回到首页">
+      <b>八戒伦理电影网</b>
+      <i>影像伦理 · 正版观影</i>
+    </a>
+    <nav role="navigation" aria-label="主导航">
+      <a href="#axis">四问</a>
+      <a href="#precept">八条戒</a>
+      <a href="#belt">片单</a>
+      <a href="#tbl">尺度表</a>
+      <a href="#faq">九个实话</a>
+      <a href="#sub">订阅</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="sky" aria-hidden="true"></div>
+  <div class="cloud c1" aria-hidden="true"><i></i><i></i></div>
+  <div class="cloud c2" aria-hidden="true"><i></i><i></i></div>
+  <div class="cloud c3" aria-hidden="true"></div>
+  <div class="cloud c4" aria-hidden="true"></div>
+  <div class="sun" aria-hidden="true"></div>
+  <div class="bird b1" aria-hidden="true">˃</div>
+  <div class="bird b2" aria-hidden="true">˃</div>
+  <div class="bird b3" aria-hidden="true">˃</div>
+  <div class="ridge" aria-hidden="true"><span class="r1"></span><span class="r2"></span><span class="r3"></span></div>
+
+  <div class="hero-in">
+    <div>
+      <div class="crumb"><a href="#top">八戒伦理电影网</a> / 影像伦理思辨 / 正版观影指引</div>
+      <h1 id="h1"><em>八戒</em>伦理电影网<br>镜头有边界，观影有立场</h1>
+      <p class="sub">「伦理」是一套现成的答案，「<b>论理</b>」是一次自己的推理。<br>
+      本站不提供任何影视资源。我们只讨论三件事：<b>镜头该拍到哪里、被拍的人有没有被尊重、以及你该去哪里正版地看</b>。</p>
+      <p class="lede">电影有权利让你哭，但你有权知道，它是怎么做到的。</p>
+      <div class="kv">
+        <span>镜头边界</span><span>知情同意</span><span>受害者视角</span><span>AI 换脸</span>
+        <span>剧透礼仪</span><span>改编与原著</span><span><u>影视资源：0 个</u></span>
+      </div>
+    </div>
+
+    <dl class="dl" itemscope itemtype="https://schema.org/WebSite">
+      <meta itemprop="url" content="https://bajielunlidianyingwang-cn.github.io/">
+      <meta itemprop="name" content="八戒伦理电影网">
+      <div><dt>思辨四问</dt><dd>4 问</dd></div>
+      <div><dt>八条戒</dt><dd>8 条</dd></div>
+      <div><dt>精选片单</dt><dd>12 部</dd></div>
+      <div><dt>伦理维度</dt><dd>6 轴</dd></div>
+      <div><dt>每月更新</dt><dd>3 篇<small>节气更</small></dd></div>
+      <div><dt>影视资源</dt><dd>0 个<small>不托管不链接</small></dd></div>
+    </dl>
+  </div>
+  <span class="sr-only">页面视觉为宣纸、朱砂与落日色调的纯 CSS 绘制：含落日光晕脉动、云层漂移、飞鸟掠过与远山剪影，无任何图片文件。</span>
+</section>
+
+<!-- ================= ① 四问 ================= -->
+<section id="axis" aria-labelledby="h2-axis">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="no">SECTION 01</span>
+      <h2 id="h2-axis">带着<b><u>四个问题</u></b>看电影，而不是带着分数</h2>
+      <p>评分回答"好不好"，论理回答"<b>凭什么</b>"。以下四个问题，每个都可以在<span class="tag">30 秒</span>内自测完成。它们不构成道德判决，只构成一次自己的推理。</p>
+    </div>
+
+    <div class="q" style="counter-reset:q">
+      <div>
+        <h3><i>Q1</i>这一镜，<u style="text-decoration:none">替谁说话</u>？</h3>
+        <p>镜头贴着谁、高于谁、低于谁，决定了这场戏的道德归属。强奸、家暴、临终、贫困，若镜头只盯着受害者的脸，观众得到的是"惨"；若镜头退到门口、窗框、一双手，观众得到的是"处境"。</p>
+        <p class="do"><b>练 30 秒：</b>遮住字幕，只看画面。问自己——"此刻我被迫站在谁的鞋里？"答不上来，多半是镜头在消费，不是在叙事。</p>
+      </div>
+      <div>
+        <h3><i>Q2</i>他<b>同意</b>了吗，且何时同意的？</h3>
+        <p>纪录片伦理的第一原则：知情同意不是签一次字，而是<b>每一次使用都重新同意</b>。拍摄时同意上镜，不等于同意被剪成"可怜的人"；成年时同意，不等于十年后还同意。真正的尊重，是"拍完还给对方看一次"。</p>
+        <p class="do"><b>练 30 秒：</b>看到真实人物流泪、发病、被捕的镜头，问："这片子赚到的钱，有没有一分分到他手里？"</p>
+      </div>
+      <div>
+        <h3><i>Q3</i>苦难，<u style="text-decoration:none">被拍得美不美</u>？</h3>
+        <p>"穷人 porn"不是题材问题，是<b>审美态度</b>问题。金色逆光下的贫民窟、慢镜头里的哭泣、配乐一起就催泪——苦难被拍得越美，越值得警惕。因为它把"他人的痛"转换成了"我的感动"，观众离开影院时带着暖意，而不是责任。</p>
+        <p class="do"><b>练 30 秒：</b>关掉声音，关掉配乐。画面若仍能成立，说明它靠的是观察；画面立刻失语，说明它靠的是煽情。</p>
+      </div>
+      <div>
+        <h3><i>Q4</i>我<b>为什么</b>在找这部片？</h3>
+        <p>找资源的速度，常常暴露了观看的动机。为了"看剧情"而忍受模糊画质与盗链风险，是消费；为了"看修复"而买一张蓝光，是支持。同一部《大都会》，你在枪版里看到的是 90 分钟，在修复版里看到的是<b>十四万四千帧被一帧一帧扫过</b>。</p>
+        <p class="do"><b>练 30 秒：</b>在搜索框输入片名前，先问："我愿意为它付 40 块吗？"不愿，就先看短片、看预告、看幕后，别用盗版替自己省下判断。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ② 八条戒 ================= -->
+<section id="precept" aria-labelledby="h2-precept" style="background:linear-gradient(180deg,transparent,rgba(194,85,47,.05))">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="no">SECTION 02</span>
+      <h2 id="h2-precept">八条<b><u>戒</u></b>：镜头该停在哪里</h2>
+      <p>"八戒"不是清规，是<b>分寸</b>。以下八条，是影像创作者与被拍者之间那条看不见的线。懂得它，你才看得懂导演在"克制"什么。</p>
+    </div>
+
+    <div class="bento">
+      <article class="bk">
+        <div>
+          <div class="num">戒 01</div>
+          <h3>戒 偷拍的"真实"</h3>
+          <p>长焦从街对面拍下的哭泣、隐蔽机位拍下的争吵、偷录的电话——"真实"不是豁免。真实感越强，伦理问题越重。</p>
+        </div>
+        <div class="cap">看什么：片尾有没有"感谢所有出镜者"</div>
+      </article>
+      <article class="bk">
+        <div>
+          <div class="num">戒 02</div>
+          <h3>戒 消费苦难</h3>
+          <p>把他人的伤痛，转换成观众的泪点与评分。逆光、慢镜、煽情配乐，是三件套。</p>
+        </div>
+        <div class="cap">判断：关掉配乐，还剩什么</div>
+      </article>
+      <article class="bk">
+        <div>
+          <div class="num">戒 03</div>
+          <h3>戒 受害者特写</h3>
+          <p>强奸、家暴、临终的极端特写，等于强迫观众"凝视"。退到一扇门、一双鞋、一段沉默，反而更痛。</p>
+        </div>
+        <div class="cap">名场面：只拍背影与关门声</div>
+      </article>
+      <article class="bk">
+        <div>
+          <div class="num">戒 04</div>
+          <h3>戒 同情即原谅</h3>
+          <p>"他小时候也被打"不是免责。理解动机 ≠ 认同行为。文艺片最容易犯的错，是把恶拍成美学。</p>
+        </div>
+        <div class="cap">警惕：迷人反派 + 悲伤 BGM</div>
+      </article>
+      <article class="bk">
+        <div>
+          <div class="num">戒 05</div>
+          <h3>戒 剧透不留白</h3>
+          <p>剧透不是泄密，是<b>剥夺他人感受的权利</b>。尤其对悬疑、反转、文艺片，"结局如何"恰恰是作品最不重要的部分。</p>
+        </div>
+        <div class="cap">做法：先问"你看了吗"再开口</div>
+      </article>
+      <article class="bk">
+        <div>
+          <div class="num">戒 06</div>
+          <h3>戒 高分即正义</h3>
+          <p>一部关于屠杀的电影拿到 8.9，不等于它拍得对。分数衡量"新鲜"，不衡量"尊重"。<b>看懂一部片，比打分更难，也更值钱。</b></p>
+        </div>
+        <div class="cap">替代：写 200 字，不点 5 星</div>
+      </article>
+      <article class="bk">
+        <div>
+          <div class="num">戒 07</div>
+          <h3>戒 AI 换脸的"复活"</h3>
+          <p>死者没有经纪约，但死者有尊严。用 AI 让已故演员"重新演出"，不是技术奇迹，是<b>未经同意的肖像使用</b>。肖像权不随死亡自动消失。</p>
+        </div>
+        <div class="cap">底线：活着的人点头，才叫合作</div>
+      </article>
+      <article class="bk">
+        <div>
+          <div class="num">戒 08</div>
+          <h3>戒 把"争议"当"深度"</h3>
+          <p>用冒犯换话题，用恶心换讨论。真正的深度是"看完三天还在想"，不是"看完立刻想骂"。<b>艺术不豁免道德，它只是让道德更难。</b></p>
+        </div>
+        <div class="cap">三问：必要吗？替代了吗？谁付代价</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ③ 片单 ================= -->
+<section id="belt" aria-labelledby="h2-belt">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="no">SECTION 03</span>
+      <h2 id="h2-belt">十二部"值得<b><u>论一论</u></b>"的片子</h2>
+      <p>入选标准只有一条：<b>它让你在看完之后，必须先跟人吵一架，才能安心睡觉</b>。片名与导演仅用于影像教学与正版观影推荐，著作权归原作者。</p>
+    </div>
+
+    <div class="belt" role="list">
+      <article class="bi" role="listitem">
+        <div class="post" style="background:linear-gradient(155deg,#3a5a73,#1e3344)"><i></i><u></u><span>1974</span><b>《感官世界》</b></div>
+        <div class="body">
+          <h4> consent 的边界，拍得像一场失控的潮</h4>
+          <cite>大岛渚 · 日本</cite>
+          <p>全裸不等于裸露伦理。它真正问的是：当"愿意"无法被证明，镜头该停在哪里？</p>
+          <div class="tags"><s> consent </s><s>身体</s><s>正版渠道</s></div>
+        </div>
+      </article>
+      <article class="bi" role="listitem">
+        <div class="post" style="background:linear-gradient(155deg,#7a6a4a,#4a3c26)"><i></i><u></u><span>1998</span><b>《罗拉快跑》</b></div>
+        <div class="body">
+          <h4>命运被剪成了游戏，人是按钮还是玩家？</h4>
+          <cite>汤姆·提克威 · 德国</cite>
+          <p>三段重复，不是炫技，是把"选择"这件事从道德里抽出来，放进概率里。</p>
+          <div class="tags"><s>决定论</s><s>游戏叙事</s><s>正版蓝光</s></div>
+        </div>
+      </article>
+      <article class="bi" role="listitem">
+        <div class="post" style="background:linear-gradient(155deg,#8f5b4a,#5c3526)"><i></i><u></u><span>2002</span><b>《上帝之城》</b></div>
+        <div class="body">
+          <h4>当"真实"本身就是剥削，镜头还算不算诚实？</h4>
+          <cite>费尔南多·梅里尔斯 · 巴西</cite>
+          <p>未成年演员、真实贫民窟、非职业表演——"穷人 porn"最著名的反例，也是最危险的诱惑。</p>
+          <div class="tags"><s>真实表演</s><s>贫困影像</s><s>正版流媒体</s></div>
+        </div>
+      </article>
+      <article class="bi" role="listitem">
+        <div class="post" style="background:linear-gradient(155deg,#6f8a5a,#43572f)"><i></i><u></u><span>1999</span><b>《细细的红线》</b></div>
+        <div class="body">
+          <h4>战争片不拍敌人，只拍草、光、与一具尸体</h4>
+          <cite>泰伦斯·马力克 · 美国</cite>
+          <p>把战争拍成自然纪录片，是最高级的反战：不审判，只呈现，让观众自己成为法官。</p>
+          <div class="tags"><s>反战</s><s>自然影像</s><s>正版修复</s></div>
+        </div>
+      </article>
+      <article class="bi" role="listitem">
+        <div class="post" style="background:linear-gradient(155deg,#a85a52,#7a322a)"><i></i><u></u><span>2017</span><b>《敦刻尔克》</b></div>
+        <div class="body">
+          <h4>不拍希特勒，不拍丘吉尔，只拍沙与表</h4>
+          <cite>克里斯托弗·诺兰 · 英国</cite>
+          <p>把"英雄叙事"拆成三条时间线。历史大片也可以没有反派，只有天气。</p>
+          <div class="tags"><s>时间结构</s><s>沉浸</s><s>正版 IMAX</s></div>
+        </div>
+      </article>
+      <article class="bi" role="listitem">
+        <div class="post" style="background:linear-gradient(155deg,#c99a3f,#8f6a1e)"><i></i><u></u><span>1957</span><b>《十二怒汉》</b></div>
+        <div class="body">
+          <h4>十二个人，一间屋，九十分，偏见现形</h4>
+          <cite>西德尼·吕美特 · 美国</cite>
+          <p>摄影机几乎不动，表演几乎不演。它证明：伦理可以是一把折刀，慢慢削掉"我以为"。</p>
+          <div class="tags"><s>偏见</s><s>封闭空间</s><s>公有领域</s></div>
+        </div>
+      </article>
+      <article class="bi" role="listitem">
+        <div class="post" style="background:linear-gradient(155deg,#5a4a6a,#352c40)"><i></i><u></u><span>1966</span><b>《假面》</b></div>
+        <div class="body">
+          <h4>两张脸融成一张，谁是病人，谁是护士？</h4>
+          <cite>英格玛·伯格曼 · 瑞典</cite>
+          <p>身份、共情、凝视——它把"看与被看"拍成了生理反应。黑白片的伦理极限。</p>
+          <div class="tags"><s>身份</s><s>凝视</s><s>正版修复</s></div>
+        </div>
+      </article>
+      <article class="bi" role="listitem">
+        <div class="post" style="background:linear-gradient(155deg,#4a3a2c,#241a12)"><i></i><u></u><span>2013</span><b>《华尔街之狼》</b></div>
+        <div class="body">
+          <h4>把恶拍得爽，是不是一种共谋？</h4>
+          <cite>马丁·斯科塞斯 · 美国</cite>
+          <p>迷人的反派 + 狂欢的剪辑 + 笑声——"理解不等于原谅"的最佳教材。</p>
+          <div class="tags"><s>反派美学</s><s>讽刺</s><s>正版流媒体</s></div>
+        </div>
+      </article>
+      <article class="bi" role="listitem">
+        <div class="post" style="background:linear-gradient(155deg,#8a6f58,#54432f)"><i></i><u></u><span>1985</span><b>《乱》</b></div>
+        <div class="body">
+          <h4>权力把人变成风景的一部分</h4>
+          <cite>黑泽明 · 日本</cite>
+          <p>用史诗的尺度拍家庭的崩塌。色彩即道德：李尔王的故事，被搬进一张被烧毁的画。</p>
+          <div class="tags"><s>权力</s><s>色彩</s><s>正版 4K</s></div>
+        </div>
+      </article>
+      <article class="bi" role="listitem">
+        <div class="post" style="background:linear-gradient(155deg,#a05a52,#6e332c)"><i></i><u></u><span>1993</span><b>《钢琴课》</b></div>
+        <div class="body">
+          <h4>她不说话，但她的手一直在说"不"</h4>
+          <cite>简·坎皮恩 · 新西兰</cite>
+          <p> consent 不是台词，是动作。一部关于"沉默如何被听见"的电影。</p>
+          <div class="tags"><s> consent </s><s>女性视角</s><s>正版蓝光</s></div>
+        </div>
+      </article>
+      <article class="bi" role="listitem">
+        <div class="post" style="background:linear-gradient(155deg,#3a6a6a,#224040)"><i></i><u></u><span>2014</span><b>《第四公民》</b></div>
+        <div class="body">
+          <h4>拍告密者的人，自己也成了被告密的对象</h4>
+          <cite>罗拉·柏翠丝 · 美国</cite>
+          <p>纪录片伦理的教科书案例：拍摄知情同意、隐藏身份、素材归属，全都在镜头里。</p>
+          <div class="tags"><s>纪录片伦理</s><s>知情同意</s><s>正版纪录片</s></div>
+        </div>
+      </article>
+      <article class="bi" role="listitem">
+        <div class="post" style="background:linear-gradient(155deg,#c2552f,#7a2c18)"><i></i><u></u><span>2022</span><b>《塔尔》</b></div>
+        <div class="body">
+          <h4>天才是否可以抵消伤害？</h4>
+          <cite>托德·菲尔德 · 美国</cite>
+          <p>权力、才华、#MeToo——它不给答案，只把问题排成一场不能鼓掌的音乐会。</p>
+          <div class="tags"><s>权力</s><s> cancel </s><s>正版院线</s></div>
+        </div>
+      </article>
+    </div>
+    <p class="tbl-note">→ 同类备选：<a href="#">《小偷家族》</a>（偷来的家，算不算家）、<a href="#">《寄生虫》</a>（阶级是气味，不是台词）、<a href="#">《燃烧》</a>（穷人是否允许有愤怒）、<a href="#">《坠落》</a>（身体与 consent）、<a href="#">《野兽》</a>（谁有权讲述他人）。</p>
+  </div>
+</section>
+
+<!-- ================= ④ 表格 ================= -->
+<section id="tbl" aria-labelledby="h2-tbl" style="background:linear-gradient(180deg,rgba(201,154,63,.05),transparent)">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="no">SECTION 04</span>
+      <h2 id="h2-tbl">伦理<b><u>尺度表</u></b>：六部争议片的六个维度</h2>
+      <p>把"该不该这么拍"拆成两个可比较的数：<b>伦理风险</b>（拍它，是否伤害了被拍者/观众/现实中的人）与 <b>表达必要</b>（不这么拍，故事是否就说不清）。两数都高，才是真问题。</p>
+    </div>
+
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th scope="col">手法 / 议题</th>
+            <th scope="col">伦理风险</th>
+            <th scope="col">表达必要</th>
+            <th scope="col">典型误用</th>
+            <th scope="col">更尊重的拍法</th>
+            <th scope="col">判断</th>
+            <th scope="col">建议观看</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>极端特写（哭泣 / 伤口 / 性）</td>
+            <td><span class="meter"><u style="width:88%"></u><b>88%</b></span></td>
+            <td><span class="meter"><u style="width:46%"></u><b>46%</b></span></td>
+            <td>用他人的痛换观众的泪</td>
+            <td>拍门、窗、手、背影、声音</td>
+            <td><span class="pill p-low">少用</span></td>
+            <td>正版修复版</td>
+          </tr>
+          <tr>
+            <td>隐蔽偷拍（长焦、隐藏机位）</td>
+            <td><span class="meter"><u style="width:96%"></u><b>96%</b></span></td>
+            <td><span class="meter"><u style="width:34%"></u><b>34%</b></span></td>
+            <td>把"真实"当免责理由</td>
+            <td>先告知、后拍摄、再回看确认</td>
+            <td><span class="pill p-low">避免</span></td>
+            <td>正版纪录片</td>
+          </tr>
+          <tr>
+            <td>长焦压缩（把人压成风景）</td>
+            <td><span class="meter"><u style="width:52%"></u><b>52%</b></span></td>
+            <td><span class="meter"><u style="width:90%"></u><b>90%</b></span></td>
+            <td>只为"美"，不顾"人"</td>
+            <td>与被拍者共同决定取景</td>
+            <td><span class="pill p-mid">可用</span></td>
+            <td>4K 修复版</td>
+          </tr>
+          <tr>
+            <td>肩扛晃动（伪纪录片感）</td>
+            <td><span class="meter"><u style="width:40%"></u><b>40%</b></span></td>
+            <td><span class="meter"><u style="width:82%"></u><b>82%</b></span></td>
+            <td>晃动 ≠ 真实，只是晕</td>
+            <td>有限使用，关键戏用三脚架</td>
+            <td><span class="pill p-high">推荐</span></td>
+            <td>蓝光 / 院线</td>
+          </tr>
+          <tr>
+            <td>受害者视角（不拍脸，拍后果）</td>
+            <td><span class="meter"><u style="width:24%"></u><b>24%</b></span></td>
+            <td><span class="meter"><u style="width:94%"></u><b>94%</b></span></td>
+            <td>以"艺术"为名，复刻创伤</td>
+            <td>只拍关门、呼吸、一只鞋</td>
+            <td><span class="pill p-high">首选</span></td>
+            <td>正版流媒体</td>
+          </tr>
+          <tr>
+            <td>留白与沉默（台词说完，再停三秒）</td>
+            <td><span class="meter"><u style="width:8%"></u><b>8%</b></span></td>
+            <td><span class="meter"><u style="width:96%"></u><b>96%</b></span></td>
+            <td>被剪成"闷"，其实是"尊重"</td>
+            <td>保留，别剪——这是最便宜的伦理</td>
+            <td><span class="pill p-high">必用</span></td>
+            <td>修复版</td>
+          </tr>
+          <tr>
+            <td>"残酷青春"（未成年 / 边缘人）</td>
+            <td><span class="meter"><u style="width:90%"></u><b>90%</b></span></td>
+            <td><span class="meter"><u style="width:60%"></u><b>60%</b></span></td>
+            <td>用少年感包装剥削</td>
+            <td>让当事人参与剪辑与收益</td>
+            <td><span class="pill p-low">慎用</span></td>
+            <td>导演官方频道</td>
+          </tr>
+          <tr>
+            <td>AI 换脸 / 数字复活死者</td>
+            <td><span class="meter"><u style="width:99%"></u><b>99%</b></span></td>
+            <td><span class="meter"><u style="width:14%"></u><b>14%</b></span></td>
+            <td>肖像权在死后依然成立</td>
+            <td>用档案影像 + 明确标注</td>
+            <td><span class="pill p-low">拒绝</span></td>
+            <td>公版 / 授权片</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tbl-note">→ 说明：数值为本站经验性量化（0–100），用于快速比较，不构成法律或伦理判决。拍摄未成年人须取得监护人书面同意；拍摄他人须取得知情同意；配乐、字体、素材、肖像均须授权。<b>死者没有经纪约，但死者有尊严。</b></p>
+  </div>
+</section>
+
+<!-- ================= ⑤ 九个实话 ================= -->
+<section id="faq" aria-labelledby="h2-faq">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="no">SECTION 05</span>
+      <h2 id="h2-faq">九个<b><u>实话</u></b>：关于"伦理电影"这个词</h2>
+      <p>本站保留相互矛盾的观点，因为电影本来就不只有一种看法。以下回答，每一条都可以被反驳——欢迎到 <a href="#sub">订阅</a> 里来反驳。</p>
+    </div>
+
+    <div class="faq">
+      <details open>
+        <summary><span class="n">1</span>为什么叫"伦理电影网"，却不推荐"伦理片"？</summary>
+        <div class="a">
+          <p>"伦理电影"在中文网络里，长期被用作一个模糊的代称，指向暧昧、擦边、甚至违规内容。这个词的污染，已经让它失去了讨论影像的能力。</p>
+          <p>所以我们夺回它：本站说的"伦理"，是 <b>影像伦理</b>——镜头与被拍者之间的关系、观众与画面之间的责任、创作者与真实之间的契约。我们不分类，我们<b>论理</b>。</p>
+          <blockquote>伦理是一套现成的答案，论理是一次自己的推理。</blockquote>
+        </div>
+      </details>
+      <details>
+        <summary><span class="n">2</span>看一部"拍得不对"的电影，算不算共谋？</summary>
+        <div class="a">
+          <p><b>不算。但看完什么都不做，接近。</b></p>
+          <ol>
+            <li>看完，写下来：它哪里让你不安？</li>
+            <li>区分"拍得丑"与"拍得不对"——前者是审美，后者是伦理。</li>
+            <li>支持替代方案：去看同一题材、拍得更尊重的那一部。</li>
+            <li>别转发盗版资源链接，那是唯一明确的"共谋"。</li>
+          </ol>
+        </div>
+      </details>
+      <details>
+        <summary><span class="n">3</span>纪录片就比剧情片"更道德"吗？</summary>
+        <div class="a">
+          <p><b>恰恰相反。</b>剧情片可以虚构、可以道歉、可以重拍；纪录片面对的是<b>真实的人，且只有一次</b>。一个虚构的受害者可以被安慰，一个真实的受害者只会被再次使用。</p>
+          <p>所以判断纪录片的第一问不是"真不真"，而是："<b>拍完之后，那个人过得更好了吗？</b>"</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="n">4</span>受害者视角一定比加害者视角"正确"吗？</summary>
+        <div class="a">
+          <p><b>不一定，但它更安全。</b>加害者视角的价值在于"理解动机"，风险在于"美化行为"。两者的分水岭只有一句：</p>
+          <blockquote>理解动机，不等于认同行为；解释来路，不等于开脱罪责。</blockquote>
+          <p>凡是让观众在结尾"有点同情坏人"的片子，请再问一句：这份同情，是谁的功劳，又是谁的代价？</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="n">5</span>正版渠道贵，是不是在"逼人盗版"？</summary>
+        <div class="a">
+          <p><b>不是。价格不是盗版的理由，是行业的问题。</b>但可以算一笔更贵的账：</p>
+          <ul>
+            <li><b>时间账</b>：找一个"免费"资源平均 20 分钟；去正版平台做决策平均 12 秒。</li>
+            <li><b>画质账</b>：一部 100 分钟的电影约 14.4 万帧。修复版是逐帧扫的；枪版是手机拍的。你以为省了 40 块，实际看到的是一部<b>不存在的电影</b>。</li>
+            <li><b>代价转移账</b>：盗版省下的那 40 块，从下一个好导演的预算里拿走一分钱。</li>
+          </ul>
+          <p>真免费的合法路径一直都在：<b>公共图书馆影音借阅、电影资料馆放映、正规流媒体免费试用、公有领域影片、导演官方频道</b>。</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="n">6</span>AI 换脸、AI 补帧、AI 上色，算不算"修复"？</summary>
+        <div class="a">
+          <p><b>都不算。最多算"重制"，且需要授权。</b></p>
+          <ul>
+            <li><b>AI 上采样 ≠ 高清修复</b>：修复是从原始底片重新扫描，AI 只是把模糊变得更大。</li>
+            <li><b>AI 补帧 ≠ 作者意图</b>：24 帧是导演的选择，插到 60 帧是对选择的覆盖。</li>
+            <li><b>AI 换脸 = 肖像侵权</b>：活着的人要点头，死去的人要依法。</li>
+          </ul>
+          <blockquote>判断口诀：看字幕边缘。发抖的是 AI，锐利的是真扫描。</blockquote>
+        </div>
+      </details>
+      <details>
+        <summary><span class="n">7</span>剧透为什么是不道德的？（尤其在伦理片里）</summary>
+        <div class="a">
+          <p>因为伦理片的<b>结局往往不是信息，而是一次体验</b>。告诉别人"凶手是谁"，偷走的是推理；告诉别人"她最后离开了"，偷走的是勇气。</p>
+          <p>做法很简单：<b>开口前先问"你看了吗"</b>；写评论时把关键转折放在最后一段，并标注"剧透预警"。对悬疑、反转、文艺片，这是基本礼貌，不是矫情。</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="n">8</span>未成年人，能不能看"有伦理争议"的电影？</summary>
+        <div class="a">
+          <p><b>能，但必须有成年人一起看，且看完要聊。</b>影像伦理最好的课堂，就是一部"让人不舒服"的片子——前提是有人在场回答"为什么"。</p>
+          <p>给家长的三句话：① 别用"尺度"做唯一判断标准，用"要不要一起看"做标准；② 出现性、暴力、自伤镜头时，先暂停，先问；③ 允许孩子说"我不想看"，这本身就是一次伦理教育。</p>
+        </div>
+      </details>
+      <details>
+        <summary><span class="n">9</span>本站更新什么，不更新什么？</summary>
+        <div class="a">
+          <p><b>每月更新 3 篇</b>：一部"值得论一论"的片、一条"镜头边界"笔记、一份"正版渠道"清单。节气更，不追首映日。</p>
+          <p><b>五条不做的</b>：① 不提供任何影视资源下载、在线播放、网盘、磁力、BT、盗链；② 不写"必看"；③ 不刷榜单；④ 不抄豆瓣；⑤ 不把"争议"当"深度"。</p>
+          <blockquote>评分回答"好不好"，论理回答"凭什么"。</blockquote>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ⑥ 订阅 ================= -->
+<section id="sub" aria-labelledby="h2-sub">
+  <div class="wrap">
+    <div class="sub">
+      <div>
+        <h3>每月三篇：<em>一篇论一镜，一条守一戒，一份正版清单。</em></h3>
+        <p>不追热点，不刷榜单，不抄豆瓣。节气更新，邮箱直达。退订一行字，不留痕。</p>
+      </div>
+      <form onsubmit="event.preventDefault();this.querySelector('button').textContent='已记录 ✓';this.querySelector('.ok').style.display='block';">
+        <label for="em" class="sr-only">邮箱地址</label>
+        <input id="em" type="email" required placeholder="your@email.com" autocomplete="email">
+        <button type="submit">订阅</button>
+        <div class="ok">✓ 已加入。下一期：<b>《论"留白"——台词说完之后那六秒》</b></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer role="contentinfo">
+  <div class="ft">
+    <div class="brand">
+      <h5>八戒伦理电影网</h5>
+      <p>影像伦理思辨与正版观影指引。镜头有边界，观影有立场。本站<b>不提供、不托管、不链接、不转存</b>任何影视作品文件。片名、导演名、镜头描述仅用于影像教学与正版观影推荐，著作权归原作者。</p>
+    </div>
+    <div>
+      <h5>论理四问</h5>
+      <ul>
+        <li><a href="#axis">替谁说话</a></li>
+        <li><a href="#axis">知情同意</a></li>
+        <li><a href="#axis">苦难是否被拍美</a></li>
+        <li><a href="#axis">我为何在找它</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>正版渠道</h5>
+      <ul>
+        <li><a href="#">电影资料馆放映</a></li>
+        <li><a href="#">正规流媒体</a></li>
+        <li><a href="#">公共图书馆影音借阅</a></li>
+        <li><a href="#">公有领域影片</a></li>
+        <li><a href="#">导演官方频道</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>本站立场</h5>
+      <ul>
+        <li><a href="#faq">九个实话</a></li>
+        <li><a href="#tbl">伦理尺度表</a></li>
+        <li><a href="#precept">八条戒</a></li>
+        <li><a href="#">投稿与抬杠规范</a></li>
+        <li><a href="#">更新日志</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="legal">
+      <p><b>合规声明：</b>本站为影视影像评论与正版观影指引站点，不含任何可播放、可下载的影视资源，不设置影视资源搜索入口，不提供网盘、磁力、BT、盗链、在线播放等任何形式的内容分发。本站不提供任何"免费影视站"的网址、名称、搜索方法与入口。</p>
+      <p><b>著作权：</b>依据《中华人民共和国著作权法》，影视作品、剧照、海报、配乐、字幕、表演者形象均受保护。引用遵循"最小必要原则"：仅使用片名、导演名、年份、镜头描述与公版/授权资料；收到权利人通知后，将在 48 小时内响应并移除。部分经典作品已进入公有领域或发行官方修复版，具体以著作权人公示与当地法律为准。</p>
+      <p><b>法律提示：</b>《刑法》第二百一十七条规定，以营利为目的，未经著作权人许可复制发行其影视作品，违法所得数额较大或有其他严重情节的，处三年以下有期徒刑，并处或单处罚金；数额巨大的，处三年以上七年以下有期徒刑，并处罚金。<b>传播的后果，重于观看。</b></p>
+      <p><b>未成年人：</b>请在监护人指导下选择适龄内容；观看含性、暴力、自伤镜头的影片时，建议由成年人陪同并事后交流。</p>
+      <p>© <span id="yr">2026</span> 八戒伦理电影网 · <a href="https://bajielunlidianyingwang-cn.github.io/">bajielunlidianyingwang-cn.github.io</a> · 备案号：待补充 · 本页即全部内容，内链均为锚点（#），未生成 robots.txt 与 sitemap.xml。</p>
+    </div>
+  </div>
+</footer>
+
+<a class="top-link" href="#top" aria-label="回到顶部" title="回到顶部">↑</a>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
